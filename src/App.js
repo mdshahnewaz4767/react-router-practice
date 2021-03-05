@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import NoMatch from './components/NoMatch/NoMatch';
+import FriendDetails from './components/FriendDetails/FriendDetails';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/friend/:friendId">
+            <FriendDetails />
           </Route>
           <Route exact path="/">
             <Home />
